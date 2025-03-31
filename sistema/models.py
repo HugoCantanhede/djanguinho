@@ -11,4 +11,28 @@ class Usuário(models.Model):
     endereco = models.CharField(max_length=100)
     data_cadastro = models.DateTimeField(default=timezone.now)
     ativo = models.BooleanField(default=True)
+    imagem = models.ImageField(blank=True, upload_to='imagens/%Y%m')
     
+    def __str__(self):
+        return f'{self.nome} {self.sobrenome}'
+
+class Genero(models.Model): 
+    nome = models.CharField(max_length=50)
+    data_cadastro = models.DateTimeField(default=timezone.now)    
+    ativo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nome   
+
+class Filme(models.Model):
+    nome = models.CharField(max_length=50)
+    estudio = models.CharField(max_length=50)
+    ano = models.DateField(default="2000-01-01")
+    # genero = models.CharField(max_length=50)
+    genero = models.ForeignKey(Genero, on_delete=models.SET_NULL, null=True, blank=True) 
+    sinopse = models.TextField()
+    data_cadastro = models.DateTimeField(default=timezone.now)    
+    ativo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nome   

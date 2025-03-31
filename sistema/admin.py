@@ -6,6 +6,15 @@ from sistema import models
 
 @admin.register(models.Usuário)
 class UsuarioAdmin(admin.ModelAdmin):
-    list_display = ('id', 'nome', 'sobrenome' ,'email','ativo',)
+    list_display = ('id', 'nome', 'sobrenome' ,'email','ativo','imagem')
 
     
+@admin.register(models.Filme)
+class FilmeAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nome', 'ano' , 'estudio','genero','ativo',)
+
+
+@admin.register(models.Genero)
+class GeneroAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nome',)
+
