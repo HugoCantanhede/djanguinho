@@ -14,7 +14,7 @@ O usuário acessa a plataforma e escolhe um vídeo, depois de assistir ele poder
 - 📈 Níveis de participação dos usuários (futuramente)
 - 🎯 Avaliação remunerada em Crypto 
 - 🔐 Autenticação simplificada com Google (futuramente)  
-
+- Open Gov e financiamento de mídias (futuramente)
 ---
 
 ## Tecnologias Utilizadas  
