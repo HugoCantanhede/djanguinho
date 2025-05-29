@@ -1,4 +1,4 @@
-# Djanqguinho 🎯  (Em Construção)
+# Djanguinho 🎯  (Em Construção)
 
 ## Sobre o Projeto  
 O **Djanguinho** é uma plataforma web de streaming que terá intregração com blockchain, é um projeto de estudo para a Transfero Academy.
